@@ -1,0 +1,43 @@
+ .archive-record-page{--accent:#b31e2d;--tint:#2b0a0e;background:radial-gradient(ellipse at 80% 5%,var(--tint),transparent 52%),#080808}
+.theme-characters{--accent:#d34b5b;--tint:#351018}
+.theme-organizations{--accent:#4f91c7;--tint:#102337}
+.theme-viruses{--accent:#b9d94c;--tint:#25320e}
+.theme-bows{--accent:#d66a3f;--tint:#35170d}
+.theme-parasites{--accent:#9a6bd1;--tint:#211332}
+.theme-fungi{--accent:#d1a94a;--tint:#30250c}
+.theme-creatures{--accent:#d44a3f;--tint:#35110e}
+.theme-locations{--accent:#5db8a6;--tint:#0e2925}
+.theme-incidents{--accent:#ef5b4f;--tint:#35100e}
+.theme-games{--accent:#5b8fe3;--tint:#10203a}
+.theme-media{--accent:#7ec4d3;--tint:#10262c}
+.theme-weapons{--accent:#d0b35e;--tint:#2c240d}
+.theme-projects{--accent:#a7a7b8;--tint:#1c1c24}
+.theme-documents{--accent:#c99b67;--tint:#2b1d11}
+.theme-bloodlines{--accent:#c76a9c;--tint:#2d1324}
+.theme-facilities{--accent:#5f9bb8;--tint:#10232d}
+.theme-timeline{--accent:#d7b96a;--tint:#2a210e}
+.theme-requiem{--accent:#ff4654;--tint:#3a0d15}dossier-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.dossier-source{margin-top:0}.record-dossier{box-shadow:0 0 35px rgba(130,10,20,.08)}@media(max-width:700px){.dossier-columns{grid-template-columns:1fr}}.dossier-detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.dossier-detail{border:1px solid rgba(255,255,255,.09);background:rgba(0,0,0,.22);padding:15px}.dossier-detail span{display:block;font-size:10px;letter-spacing:.16em;color:#b9b9b9;margin-bottom:8px}.dossier-detail p{margin:0;color:#ddd;line-height:1.55;font-size:13px}.record-dossier{scroll-margin-top:20px}@media(max-width:760px){.dossier-detail-grid{grid-template-columns:1fr}}
+
+/* Detail view: the database index is completely replaced by the selected record. */
+.record-detail-screen{min-height:calc(100vh - 120px);padding:clamp(28px,5vw,70px) clamp(18px,5vw,80px) 80px;max-width:1280px;margin:0 auto}
+.detail-topline{display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:14px;margin-bottom:36px}
+.detail-topline>span{font-size:10px;letter-spacing:.16em;color:#aaa}
+.detail-back{appearance:none;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.35);color:#ddd;padding:10px 15px;font:inherit;font-size:10px;letter-spacing:.14em;cursor:pointer;transition:.2s}
+.detail-back:hover{border-color:var(--accent);color:#fff;background:rgba(120,0,10,.18)}
+.detail-classification{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.detail-classification span{font-size:9px;letter-spacing:.14em;border:1px solid rgba(255,255,255,.12);padding:6px 9px;color:#aaa}
+.record-detail-screen h1{font-size:clamp(40px,7vw,92px);line-height:.92;margin:0 0 22px;max-width:1100px;text-transform:uppercase;letter-spacing:-.04em}
+.detail-summary{font-size:clamp(15px,1.5vw,19px);line-height:1.7;color:#d2d2d2;max-width:900px;margin:0 0 32px}
+.detail-meta-columns{margin-bottom:30px}
+.detail-back-bottom{margin-top:34px}
+@media(max-width:700px){.detail-topline{align-items:flex-start;flex-direction:column}.detail-back{width:100%}.record-detail-screen{padding-left:16px;padding-right:16px}.record-detail-screen h1{font-size:42px}}
+.record-tile{overflow:hidden;padding:0}.record-tile .tile-top,.record-tile>small,.record-tile>h3,.record-tile>p,.record-tile>.tile-bottom{margin-left:18px;margin-right:18px}.record-tile .tile-top{margin-top:14px}
+
+.record-detail-screen h1{max-width:100%;font-size:clamp(42px,6.4vw,84px);line-height:.94;overflow-wrap:anywhere}
+.detail-summary{max-width:920px;line-height:1.72}
+.dossier-detail-grid{align-items:stretch}
+.dossier-detail{min-width:0}
+.dossier-detail p{max-width:100%;overflow-wrap:anywhere}
+
+.record-grid-text-only .record-tile img,
+.record-grid-text-only .record-tile{background-image:none !important;}

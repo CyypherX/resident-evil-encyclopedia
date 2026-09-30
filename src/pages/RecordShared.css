@@ -1,0 +1,103 @@
+.record-page{max-width:100%;min-height:80vh}.record-hero{max-width:1220px;margin:auto;padding:clamp(50px,7vw,90px) 28px 55px;border-bottom:1px solid #3a2a2a;position:relative}.record-eyebrow{font-size:11px;letter-spacing:2.4px;color:var(--accent);font-weight:700}.record-hero h1{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-size:clamp(56px,8vw,100px);font-weight:700;line-height:1.02;letter-spacing:0;margin:20px 0 24px;overflow-wrap:anywhere;color:#eee}.record-hero h1 span{display:block;color:transparent;-webkit-text-stroke:1px #8c8585;font-size:.7em;letter-spacing:1px;margin-top:6px}.record-hero>p{font-size:clamp(14px,1.2vw,16px);line-height:1.7;color:#a79d9d;max-width:670px;margin:0}.record-meta{margin-top:28px;color:#877777;display:flex;gap:20px;font-size:10px;letter-spacing:1.6px}.record-meta b{color:var(--accent)}.record-browser{max-width:1220px;margin:auto;padding:44px 28px 90px}.record-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:24px}.record-toolbar small{color:var(--accent);font-size:10px;letter-spacing:2px}.record-toolbar h2{font-size:23px;letter-spacing:1px;font-weight:600;margin:8px 0;color:#e5e0e0}.record-search{display:flex;align-items:center;gap:10px;border:1px solid #493333;padding:13px 16px;background:#110e0e;min-width:260px}.record-search span{font-size:22px;color:var(--accent)}.record-search input{border:0;outline:0;background:transparent;color:#fff;width:100%;font-size:11px;letter-spacing:1px}.record-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.record-tile{text-align:left;display:flex;flex-direction:column;min-width:0;min-height:245px;padding:23px;background:linear-gradient(155deg,var(--tint),#100d0d 62%);border:1px solid #3b3030;color:#eee;cursor:pointer;transition:transform .2s,border-color .2s;font-family:inherit}.record-tile:hover,.record-tile.selected{transform:translateY(-3px);border-color:var(--accent)}.tile-top{display:flex;justify-content:space-between;color:var(--accent);font-size:11px;letter-spacing:2px;margin-bottom:30px}.tile-top span:last-child{font-size:19px}.record-tile>small{color:var(--accent);font-size:11px;letter-spacing:1px;line-height:1.4}.record-tile h3{font-size:clamp(21px,2vw,28px);line-height:1.2;margin:8px 0 12px;font-weight:600;overflow-wrap:anywhere}.record-tile p{font-size:13px;color:#aaa;line-height:1.55;margin:0 0 20px}.tile-bottom{margin-top:auto;padding-top:17px;border-top:1px solid #413434;display:flex;justify-content:space-between;font-size:10px;letter-spacing:1.5px;color:#b9adad}.tile-bottom span{color:var(--accent);font-size:15px}.record-empty{padding:50px;text-align:center;color:#a99}.record-dossier{margin-top:28px;border:1px solid var(--accent);background:linear-gradient(135deg,var(--tint),#100d0d);padding:clamp(22px,4vw,42px)}.dossier-heading{display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:2px;color:var(--accent);border-bottom:1px solid #493838;padding-bottom:20px;margin-bottom:30px}.dossier-heading button{background:none;border:0;color:#fff;cursor:pointer;font-size:11px;letter-spacing:1px}.record-dossier>small{font-size:12px;color:var(--accent)}.record-dossier h2{font-size:clamp(30px,5vw,55px);line-height:1.15;margin:10px 0 20px;color:#fff}.record-dossier>p{font-size:15px;line-height:1.75;max-width:780px;color:#c1b7b7}.dossier-source{display:grid;gap:8px;margin-top:35px;border-left:2px solid var(--accent);padding-left:18px}.dossier-source span{color:#a39a9a;font-size:10px;letter-spacing:1.5px}.dossier-source strong{font-size:16px;font-weight:500;color:#eee}.record-dossier .dossier-note{font-size:11px;color:#847777;margin-top:30px}@media(max-width:920px){.record-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:580px){.record-hero{padding:48px 18px 35px}.record-browser{padding:32px 18px 70px}.record-toolbar{align-items:stretch;flex-direction:column}.record-search{min-width:0}.record-grid{grid-template-columns:1fr}.record-tile{min-height:210px}.record-meta{flex-wrap:wrap}}
+/* NO-ARROW POLICY */
+.record-tile::before,.record-tile::after,.tile-top::before,.tile-top::after,.tile-bottom::before,.tile-bottom::after,.dossier-heading button::before,.dossier-heading button::after{content:none !important;display:none !important;}
+
+/* Typography and alignment pass: consistent readable proportions across the entire archive. */
+.record-page{width:100%;overflow-x:hidden}
+.record-hero,.record-browser,.record-detail-screen{width:min(1240px,calc(100% - 48px));box-sizing:border-box}
+.record-hero h1{max-width:100%;font-size:clamp(48px,7vw,88px);line-height:.94}
+.record-hero>p{max-width:760px}
+.record-toolbar{align-items:flex-end}
+.record-toolbar>div{min-width:0}
+.record-toolbar h2{line-height:1.15}
+.record-search{width:min(360px,100%);box-sizing:border-box}
+.record-grid{align-items:stretch}
+.record-tile{width:100%;min-width:0;box-sizing:border-box}.record-tile h3{font-size:clamp(20px,1.8vw,25px);line-height:1.12;letter-spacing:.2px}
+.record-tile p{max-width:100%;line-height:1.6}
+.tile-top{margin-bottom:14px}
+.tile-bottom{gap:12px;flex-wrap:wrap;align-items:center}
+.tile-bottom span{font-size:10px;line-height:1.35}
+@media(max-width:920px){.record-hero,.record-browser,.record-detail-screen{width:min(100% - 32px,1240px)}}
+@media(max-width:580px){.record-hero,.record-browser,.record-detail-screen{width:calc(100% - 28px)}.record-tile h3{font-size:22px}.record-tile p{font-size:12px}}
+
+/* FINAL SITE-WIDE TEXT / BOX ALIGNMENT */
+.record-page{font-kerning:normal;text-rendering:optimizeLegibility}
+.record-hero,.record-browser{width:min(1240px,calc(100% - 48px));margin-left:auto;margin-right:auto}
+.record-hero{padding:clamp(48px,6vw,76px) 0 44px}
+.record-hero h1{margin:16px 0 20px;line-height:.96;letter-spacing:-.025em}
+.record-hero>p{max-width:780px;line-height:1.72}
+.record-meta{align-items:center;gap:10px 22px;line-height:1.5;flex-wrap:wrap}
+.record-browser{padding:40px 0 82px}
+.record-toolbar{min-height:58px;margin-bottom:22px;align-items:flex-end}
+.record-toolbar>div{display:flex;flex-direction:column;justify-content:flex-end;min-height:58px}
+.record-toolbar small{line-height:1.4}
+.record-toolbar h2{margin:7px 0 0;line-height:1.15}
+.record-search{height:44px;min-width:300px;width:360px;padding:0 14px;flex:0 0 auto}
+.record-search span{font-size:19px;line-height:1}
+.record-search input{height:100%;line-height:44px}
+.record-grid{grid-auto-rows:1fr;align-items:stretch}
+.record-tile{min-height:260px;height:100%;padding:20px;justify-content:flex-start}
+.record-tile .tile-top{min-height:22px;align-items:center;margin-bottom:18px;line-height:1.3}
+.record-tile>small{min-height:30px;display:block;line-height:1.4}
+.record-tile h3{min-height:54px;margin:7px 0 12px;line-height:1.12;display:flex;align-items:flex-start}
+.record-tile p{margin:0 0 18px;line-height:1.58;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.tile-bottom{margin-top:auto;min-height:31px;padding-top:12px;align-items:center;line-height:1.3}
+.tile-bottom span{font-size:9px;line-height:1.3}
+.record-empty{border:1px solid #332929;padding:44px 20px;margin:0;line-height:1.5}
+
+.record-detail-screen{width:min(1240px,calc(100% - 48px));padding:clamp(36px,5vw,66px) 0 78px}
+.detail-topline{min-height:42px;margin-bottom:34px;padding-bottom:13px;align-items:center}
+.detail-topline>span{line-height:1.5}
+.detail-back{min-height:40px;display:inline-flex;align-items:center;justify-content:center;text-align:center;line-height:1.2}
+.detail-classification{min-height:28px;align-items:center}
+.record-detail-screen h1{margin:0 0 20px;line-height:.96;letter-spacing:-.025em}
+.detail-summary{max-width:900px;margin:0 0 30px;line-height:1.72}
+.detail-meta-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:26px}
+.dossier-source{min-height:86px;margin:0;padding:15px 18px;justify-content:center;border:1px solid rgba(255,255,255,.09);border-left:2px solid var(--accent);background:rgba(0,0,0,.18)}
+.dossier-source span{line-height:1.4}
+.dossier-source strong{line-height:1.45;overflow-wrap:anywhere}
+.dossier-detail-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:0;align-items:stretch}
+.dossier-detail{min-height:145px;height:100%;padding:18px;display:flex;flex-direction:column;justify-content:flex-start}
+.dossier-detail span{line-height:1.4;margin-bottom:10px}
+.dossier-detail p{line-height:1.65;overflow-wrap:anywhere}
+.detail-back-bottom{margin-top:28px}
+
+@media(max-width:1000px){.record-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){
+ .record-hero,.record-browser,.record-detail-screen{width:calc(100% - 30px)}
+ .record-hero{padding-top:42px}
+ .record-toolbar{align-items:stretch;min-height:0}
+ .record-toolbar>div{min-height:0}
+ .record-search{width:100%;min-width:0;margin-top:4px}
+ .record-grid{grid-template-columns:1fr}
+ .record-tile{min-height:235px}
+ .record-detail-screen h1{font-size:clamp(38px,12vw,58px)}
+ .detail-meta-columns,.dossier-detail-grid{grid-template-columns:1fr}
+ .dossier-detail{min-height:0}
+ .detail-topline{align-items:stretch;flex-direction:column}
+ .detail-back{width:100%}
+}
+
+/* HEADING SPACING REFINEMENT */
+.record-hero h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.13em;
+  line-height: 0.94;
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+.record-hero h1 span {
+  margin-top: 0;
+  padding-top: 0.03em;
+  line-height: 0.94;
+}
+
+.record-detail-screen h1 {
+  margin-bottom: 26px;
+}
+
+@media (max-width: 700px) {
+  .record-hero h1 { gap: 0.11em; margin-bottom: 22px; }
+  .record-detail-screen h1 { margin-bottom: 22px; }
+}

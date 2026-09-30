@@ -1,0 +1,13 @@
+.music-control{
+ position:fixed;right:22px;bottom:22px;z-index:9999;
+ display:flex;align-items:center;gap:9px;
+ min-width:112px;height:40px;padding:0 13px;
+ border:1px solid #573034;background:rgba(8,7,7,.92);
+ color:#d7b4b4;font:600 10px Arial,Helvetica,sans-serif;
+ letter-spacing:1.5px;cursor:pointer;backdrop-filter:blur(8px);
+ transition:background .2s,border-color .2s,color .2s,transform .2s;
+}
+.music-control:hover{background:rgba(82,25,31,.95);border-color:#8d3b42;color:#fff;transform:translateY(-1px)}
+.music-dot{width:7px;height:7px;border-radius:50%;background:#c83d46;box-shadow:0 0 9px rgba(200,61,70,.75);flex:0 0 auto}
+.music-control.is-muted .music-dot{background:#777;box-shadow:none}
+@media(max-width:650px){.music-control{right:12px;bottom:12px;height:36px;min-width:100px;padding:0 10px;font-size:9px}}
